@@ -31,60 +31,73 @@ body {
   border-radius: 6px;
 }
 
-/* ============ Modo oscuro Resetly ============ */
+/* ============ Modo oscuro Resetly (slate profundo) ============ */
 .resetly-oscuro {
   color-scheme: dark;
 }
-.resetly-oscuro .bg-white { background-color: #181818 !important; }
-.resetly-oscuro .bg-neutral-50 { background-color: #202020 !important; }
-.resetly-oscuro .bg-neutral-100 { background-color: #2b2b2b !important; }
-.resetly-oscuro .bg-emerald-50 { background-color: #14261c !important; }
-.resetly-oscuro .bg-red-50 { background-color: #2b1515 !important; }
-.resetly-oscuro .bg-amber-50 { background-color: #2b2111 !important; }
-.resetly-oscuro .bg-blue-50 { background-color: #15202b !important; }
-.resetly-oscuro .text-neutral-900 { color: #f5f5f5 !important; }
-.resetly-oscuro .text-neutral-700 { color: #d6d6d6 !important; }
-.resetly-oscuro .text-neutral-600 { color: #b5b5b5 !important; }
-.resetly-oscuro .text-neutral-500 { color: #a8a8a8 !important; }
-.resetly-oscuro .text-black { color: #ffffff !important; }
+.resetly-oscuro .bg-white { background-color: #0f172a !important; }
+.resetly-oscuro .bg-neutral-50 { background-color: #0b1426 !important; }
+.resetly-oscuro .bg-neutral-100 { background-color: #1e293b !important; }
+.resetly-oscuro .bg-emerald-50 { background-color: #052e1f !important; }
+.resetly-oscuro .bg-emerald-100 { background-color: #064e33 !important; }
+.resetly-oscuro .bg-emerald-200 { background-color: #065f46 !important; }
+.resetly-oscuro .bg-red-50 { background-color: #2b1215 !important; }
+.resetly-oscuro .bg-red-100 { background-color: #4c1a1a !important; }
+.resetly-oscuro .bg-red-200 { background-color: #7f1d1d !important; }
+.resetly-oscuro .bg-amber-50 { background-color: #241a08 !important; }
+.resetly-oscuro .bg-amber-100 { background-color: #45300a !important; }
+.resetly-oscuro .bg-amber-200 { background-color: #92400e !important; }
+.resetly-oscuro .bg-blue-50 { background-color: #0c1a2b !important; }
+.resetly-oscuro .text-neutral-900 { color: #f1f5f9 !important; }
+.resetly-oscuro .text-neutral-700 { color: #cbd5e1 !important; }
+.resetly-oscuro .text-neutral-600 { color: #94a3b8 !important; }
+.resetly-oscuro .text-neutral-500 { color: #94a3b8 !important; }
+.resetly-oscuro .text-black { color: #f8fafc !important; }
 .resetly-oscuro .text-emerald-700,
 .resetly-oscuro .text-emerald-600 { color: #6ee7b7 !important; }
 .resetly-oscuro .text-red-600,
 .resetly-oscuro .text-red-500 { color: #fca5a5 !important; }
 .resetly-oscuro .text-amber-800 { color: #fcd34d !important; }
-.resetly-oscuro .border-neutral-200 { border-color: #333333 !important; }
-.resetly-oscuro .border-neutral-100 { border-color: #2a2a2a !important; }
+.resetly-oscuro .border-neutral-200 { border-color: #1e293b !important; }
+.resetly-oscuro .border-neutral-100 { border-color: #1e293b !important; }
 .resetly-oscuro .border-red-200 { border-color: #5b2323 !important; }
-.resetly-oscuro .border-emerald-100 { border-color: #1d4030 !important; }
+.resetly-oscuro .border-emerald-100 { border-color: #14532d !important; }
 .resetly-oscuro .border-red-100 { border-color: #4a1f1f !important; }
 .resetly-oscuro .border-amber-200 { border-color: #57431c !important; }
 .resetly-oscuro .border-blue-200 { border-color: #27405a !important; }
-.resetly-oscuro .border-black { border-color: #e5e5e5 !important; }
+.resetly-oscuro .border-black { border-color: #e2e8f0 !important; }
 /* Acentos negros (botones, barras, puntos) se invierten a claro */
-.resetly-oscuro .bg-black { background-color: #ededed !important; color: #111111 !important; }
-.resetly-oscuro .bg-black .text-white { color: #111111 !important; }
-/* Tarjetas negras de sección se mantienen oscuras con borde */
-.resetly-oscuro .bg-\[\#111111\] { background-color: #141414 !important; border: 1px solid #2e2e2e; }
+.resetly-oscuro .bg-black { background-color: #f1f5f9 !important; color: #020617 !important; }
+.resetly-oscuro .bg-black .text-white { color: #020617 !important; }
+/* Tarjetas negras de sección se adaptan a slate */
+.resetly-oscuro .bg-\[\#111111\] { background-color: #0f172a !important; border: 1px solid #1e293b; }
 /* Sus tarjetas blancas interiores se quedan claras */
-.resetly-oscuro .bg-\[\#111111\] .bg-white { background-color: #f5f5f5 !important; color: #111111 !important; }
-.resetly-oscuro .bg-\[\#111111\] .bg-white .text-black { color: #111111 !important; }
+.resetly-oscuro .bg-\[\#111111\] .bg-white { background-color: #f1f5f9 !important; color: #020617 !important; }
+.resetly-oscuro .bg-\[\#111111\] .bg-white .text-black { color: #020617 !important; }
 .resetly-oscuro .bg-\[\#111111\] .bg-white .text-neutral-500,
-.resetly-oscuro .bg-\[\#111111\] .bg-white .text-neutral-400 { color: #525252 !important; }
-.resetly-oscuro aside nav .bg-white { background-color: #f5f5f5 !important; color: #111111 !important; }
+.resetly-oscuro .bg-\[\#111111\] .bg-white .text-neutral-400 { color: #475569 !important; }
+.resetly-oscuro aside { background-color: rgba(15, 23, 42, 0.5) !important; border-color: #1e293b !important; }
+.resetly-oscuro aside nav .bg-white { background-color: #f1f5f9 !important; color: #020617 !important; }
 .resetly-oscuro input,
 .resetly-oscuro select,
-.resetly-oscuro textarea { color: #f5f5f5; }
+.resetly-oscuro textarea { color: #f1f5f9; }
 .resetly-oscuro input::placeholder,
-.resetly-oscuro textarea::placeholder { color: #737373; }
-.resetly-oscuro code { background-color: #2b2b2b !important; }
-.resetly-oscuro :focus-visible { outline-color: #f5f5f5; }
+.resetly-oscuro textarea::placeholder { color: #64748b; }
+.resetly-oscuro code { background-color: #1e293b !important; }
+.resetly-oscuro :focus-visible { outline-color: #f1f5f9; }
 
 /* Gráficos SVG */
 .graf text { fill: #737373; font-size: 8px; }
-.resetly-oscuro .graf text { fill: #a8a8a8; }
+.resetly-oscuro .graf text { fill: #64748b; }
 .graf .linea { fill: none; stroke: #111111; stroke-width: 2; stroke-linecap: round; }
-.resetly-oscuro .graf .linea { stroke: #e5e5e5; }
+.resetly-oscuro .graf .linea { stroke: #f1f5f9; }
 .graf .punto { fill: #111111; }
-.resetly-oscuro .graf .punto { fill: #e5e5e5; }
+.resetly-oscuro .graf .punto { fill: #f1f5f9; }
 .graf .rejilla { stroke: #e5e5e5; stroke-width: 1; }
-.resetly-oscuro .graf .rejilla { stroke: #333333; }
+.resetly-oscuro .graf .rejilla { stroke: #1e293b; }
+.graf text.graf-num { fill: #111111; }
+.resetly-oscuro .graf text.graf-num { fill: #f1f5f9; }
+.graf-barra-a { fill: #111111; background: #111111; }
+.resetly-oscuro .graf-barra-a { fill: #38bdf8; background: #38bdf8; }
+.graf-barra-b { fill: #16a34a; background: #16a34a; }
+.resetly-oscuro .graf-barra-b { fill: #4ade80; background: #4ade80; }

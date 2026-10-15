@@ -4,7 +4,7 @@ Dashboard personal en español: **cuerpo, mente y empresa**. 100% local, sin cue
 
 ## Pestañas
 
-- **Inicio:** resumen, tareas del día, calendario con días registrados, progreso (puntos, enfoque, sueño y energía) y avisos de pagos.
+- **Inicio:** centro de comando. Saludo dinámico, rana del día, pomodoro rápido, alertas, Score Resetly, tendencia 7–30 días, sueño vs energía, tareas y calendario con drawer por día.
 - **Mi día:** registro diario (fecha, sueño, energía, ánimo, entreno, nota Markdown) con historial y racha real.
 - **Físico:** plantilla de rutina Lun–Dom editable, registro de entrenos (con borrado), marcas y recuperación.
 - **Mente:** temporizador Pomodoro por ciclos (25/5, largo de 20 cada 4, con sonido, título en pestaña y pausa automática), proyectos y cursos con documento Markdown propio.
@@ -42,14 +42,18 @@ Cualquier hosting estático (raíz del dominio):
 index.html          # entrada (título, favicon, theme-color)
 public/favicon.svg  # icono
 src/main.jsx        # montaje + límite de errores
-src/App.jsx         # app completa
-src/index.css       # Tailwind + foco visible + modo oscuro + gráficos
+src/App.jsx               # layout full-screen, timer, paleta, estado global
+src/lib/datos.js          # utils, estado inicial, normalizar, métricas
+src/components/           # Sidebar, Topbar, Palette, HelpModal, Calendar, Editors, ui
+src/views/                # Inicio, MiDia, Fisico, Mente, Metodos, Empresa, Ajustes
+src/index.css             # Tailwind + foco visible + modo oscuro slate + gráficos
 tailwind.config.js
 vite.config.js
 ```
 
 ## Atajos y detalles
 
-- El temporizador suena al terminar, muestra la cuenta en el título y se pausa si cambias de pestaña.
+- **Ctrl+K / Cmd+K:** paleta de comandos (pestañas, temporizador, tema, exportar, ayuda). **Esc** cierra diálogos.
+- El temporizador suena al terminar, muestra la cuenta en el título y se pausa si cambias de pestaña. Cada pomodoro suma a tu serie de enfoque para los gráficos.
 - Modo oscuro: botón luna/sol en el encabezado, se guarda con tus datos.
 - Accesibilidad: landmarks (`nav`/`main`), etiquetas en botones de icono y foco visible con teclado.
