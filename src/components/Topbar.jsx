@@ -3,7 +3,7 @@ import { Search, Bell, Moon, Sun, Command } from 'lucide-react';
 import { NAV } from './Sidebar';
 
 export default function Topbar({ pestana, go, busqueda, setBusqueda, esOscuro, onTema, onPalette, nAvisos, perfil }) {
-  const racha = perfil.racha || 1;
+  const racha = perfil.racha ?? 1;
   return (
     <div className="space-y-3">
       {/* Nav móvil */}

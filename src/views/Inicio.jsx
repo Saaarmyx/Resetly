@@ -10,7 +10,7 @@ export default function Inicio({ datos, setDatos, log, timer, go, avisosSubs, di
   const [rango, setRango] = useState(7);
 
   const habitosHechos = datos.habitos.filter((h) => h.completado).length;
-  const racha = datos.perfil.racha || 1;
+  const racha = datos.perfil.racha ?? 0;
   const ranaHoy = datos.rana?.fecha === hoyISO() ? datos.rana : null;
   const score = useMemo(() => scoreResetly(datos), [datos]);
   const ultimosRegistros = useMemo(() => [...datos.registrosDiarios]
@@ -52,7 +52,7 @@ export default function Inicio({ datos, setDatos, log, timer, go, avisosSubs, di
       <div className="bg-[#111111] text-white rounded-[20px] p-6 grid lg:grid-cols-3 gap-5 items-center overflow-hidden">
         <div className="lg:col-span-1">
           <p className="text-xs text-neutral-400">{new Date().toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
-          <h1 className="font-bold text-2xl mt-1">{saludoSegunHora()}, {datos.perfil.alias}</h1>
+          <h1 className="font-bold text-2xl mt-1">{saludoSegunHora()}{datos.perfil.alias ? `, ${datos.perfil.alias}` : ''}</h1>
           <p className="text-sm text-neutral-400 mt-1 flex items-center gap-1.5">
             <Flame className="w-4 h-4 text-amber-400" />{racha} {racha === 1 ? 'día consecutivo' : 'días consecutivos'} · {timer.pomodorosHoy} pomodoros hoy
           </p>

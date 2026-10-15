@@ -36,43 +36,31 @@ export const saludoSegunHora = () => {
 };
 
 export const RUTINA_DEFAULT = {
-  Lunes: { tipo: 'Fuerza empuje', detalle: '- Press banca 5x5\n- Press militar 4x8\n- Fondos 3x12' },
-  Martes: { tipo: 'Acondicionamiento', detalle: '- 20 min trote suave\n- 6 rondas saco 3 min\n- Movilidad 10 min' },
-  'Miércoles': { tipo: 'Fuerza pierna', detalle: '- Sentadilla 5x5\n- Peso muerto 3x5\n- Zancadas 3x12' },
-  Jueves: { tipo: 'Técnica / movilidad', detalle: '- Movilidad cadera 15 min\n- Core 3 rondas\n- Caminata 30 min' },
-  Viernes: { tipo: 'Fuerza tirón', detalle: '- Dominadas 5x5\n- Remo 4x8\n- Curl 3x12' },
-  'Sábado': { tipo: 'Deporte / aire libre', detalle: '- Sesión larga a elegir\n- Estiramientos 15 min' },
-  Domingo: { tipo: 'Recuperación', detalle: '- Caminata suave\n- Sueño 8h\n- Sin pantallas 1h antes de dormir' },
+  Lunes: { tipo: '', detalle: '' },
+  Martes: { tipo: '', detalle: '' },
+  'Miércoles': { tipo: '', detalle: '' },
+  Jueves: { tipo: '', detalle: '' },
+  Viernes: { tipo: '', detalle: '' },
+  'Sábado': { tipo: '', detalle: '' },
+  Domingo: { tipo: '', detalle: '' },
 };
 
 export const ESTADO_INICIAL = {
-  perfil: { alias: 'Operador Resetly', titulo: 'En reconstrucción', racha: 1 },
-  habitos: [
-    { id: 'h1', titulo: 'Entrenar según rutina del día', categoria: 'fisico', completado: false },
-    { id: 'h2', titulo: '2 h de trabajo profundo', categoria: 'mente', completado: false },
-    { id: 'h3', titulo: 'Dormir 7.5 h + sin móvil en cama', categoria: 'fisico', completado: true },
-    { id: 'h4', titulo: 'Revisar ingresos y gastos', categoria: 'empresa', completado: false },
-  ],
+  perfil: { alias: '', titulo: '', racha: 0 },
+  habitos: [],
   registrosDiarios: [],
   rutinasSemanales: RUTINA_DEFAULT,
   entrenos: [],
-  statsFisicos: { press: 100, sentadilla: 140, pesoMuerto: 180, vo2: 45, grasa: 15 },
-  readiness: { suenoHrs: 7.5, hidratacionL: 2.5, proteina: 160, energia: 75 },
-  proyectos: [
-    { id: 'p1', nombre: 'Portafolio personal', estado: 'En curso', stack: 'React, Vite', prioridad: 'Alta', progreso: 40, notas: '# Objetivo\nLanzar portafolio antes de fin de mes.\n\n- [x] Estructura base\n- [ ] 3 proyectos documentados\n- [ ] Desplegar en hosting', actualizado: hoyISO() },
-  ],
-  cursos: [
-    { id: 'c1', titulo: 'Inglés técnico', categoria: 'Idiomas', progreso: 30, notas: '# Vocabulario\n- ship / deploy / rollback\n\n## Frases\n- "Can you review this PR?"', actualizado: hoyISO() },
-  ],
+  statsFisicos: { press: 0, sentadilla: 0, pesoMuerto: 0, vo2: 0, grasa: 0 },
+  readiness: { suenoHrs: 0, hidratacionL: 0, proteina: 0, energia: 0 },
+  proyectos: [],
+  cursos: [],
   finanzas: {
     mesActual: mesISO(),
-    metaMensual: 50000,
-    ingresos: [{ id: 'i1', fecha: hoyISO(), concepto: 'Salario / cliente base', monto: 30000 }],
-    gastos: [{ id: 'g1', fecha: hoyISO(), concepto: 'Comida semanal', monto: 2500, categoria: 'Comida' }],
-    suscripciones: [
-      { id: 's1', nombre: 'Internet', monto: 600, diaPago: 5, activa: true },
-      { id: 's2', nombre: 'Streaming', monto: 219, diaPago: 20, activa: true },
-    ],
+    metaMensual: 0,
+    ingresos: [],
+    gastos: [],
+    suscripciones: [],
   },
   minutosFoco: 0,
   focoPorDia: {},
@@ -87,7 +75,7 @@ export const ESTADO_INICIAL = {
   entorno: { limpio: false, luz: false, silla: false, agua: false, fecha: '' },
   tema: 'claro',
   ultimoRespaldo: '',
-  logs: [{ id: 'l1', hora: '08:30', mensaje: 'Bienvenido a Resetly. Registra tu día para empezar tu racha.' }],
+  logs: [],
 };
 
 // Fusiona datos guardados/importados con los valores por defecto.

@@ -18,7 +18,7 @@ export default function MiDia({ datos, setDatos, log }) {
       const d = new Date(`${item.fecha}T00:00:00Z`);
       d.setUTCDate(d.getUTCDate() - 1);
       const tieneAyer = sinEseDia.some((r) => r.fecha === d.toISOString().split('T')[0]);
-      const racha = yaExistia ? (p.perfil.racha || 1) : (tieneAyer ? (p.perfil.racha || 0) + 1 : 1);
+      const racha = yaExistia ? (p.perfil.racha ?? 0) : (tieneAyer ? (p.perfil.racha || 0) + 1 : 1);
       return { ...p, registrosDiarios: [item, ...sinEseDia].sort((a, b) => (a.fecha < b.fecha ? 1 : -1)), perfil: { ...p.perfil, racha } };
     });
     log(`Registro diario guardado (${item.fecha}): ${item.suenoHrs} h de sueño.`);
